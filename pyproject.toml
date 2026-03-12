@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shapegraphs"
+version = "0.1.0"
+description = "Shape graph computation and analysis for soccer tracking data"
+requires-python = ">=3.9"
+dependencies = [
+    "networkx>=3.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+video = ["opencv-python>=4.8"]
+
+[tool.setuptools.packages.find]
+# The package source lives one directory up from pyproject.toml
+# (i.e. thesis/ contains shapegraphs/).
+where   = [".."]
+include = ["shapegraphs*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
