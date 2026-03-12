@@ -17,7 +17,7 @@ Shape graphs are planar subgraphs of the Delaunay triangulation of player positi
 Clone the repository and install in editable mode from the `shapegraphs/` directory:
 
 ```bash
-pip install shapegraphs
+pip install git+https://github.com/fegerar/shapegraphs.git
 ```
 
 ---
