@@ -18,11 +18,11 @@ dependencies = [
 [project.optional-dependencies]
 video = ["opencv-python>=4.8"]
 
-[tool.setuptools.packages.find]
-# The package source lives one directory up from pyproject.toml
-# (i.e. thesis/ contains shapegraphs/).
-where   = [".."]
-include = ["shapegraphs*"]
+[tool.setuptools]
+packages = ["shapegraphs", "shapegraphs.readers"]
+
+[tool.setuptools.package-dir]
+shapegraphs = "."
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
