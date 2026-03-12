@@ -2,7 +2,7 @@
 
 A Python library for computing, analysing, and visualising **shape graphs** of soccer tracking data.
 
-This library is a direct implementation of the shape graph framework introduced by:
+This library is a custom implementation of the shape graph framework introduced by:
 
 > Ulrik Brandes, Hadi Sotudeh, Doğan Parlak, Paolo Laffranchi & Mert Erkul  (2025).  
 > *Shape graphs and the instantaneous inference of tactical positions in soccer*  
